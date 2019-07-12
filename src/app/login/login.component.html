@@ -2,7 +2,9 @@
 Login works!
 </p>
 
-Username <input type="text" name="username" />
-Password <input type="password" name="password" />
+Username <input type="text" name="username" [(ngModel)]="username"/>
+Password <input type="password" name="password" [(ngModel)]="password"/>
 
-<input type="button" value="Submit" />
+User Name : {{username}}
+
+<button (click)=loginEvent()> Login </button>
