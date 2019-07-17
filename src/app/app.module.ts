@@ -8,8 +8,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, AppRoutingModule, FormsModule ],
   declarations: [ AppComponent, LoginComponent, WelcomeComponent ],
+  providers: [],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { 
