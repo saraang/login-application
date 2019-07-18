@@ -1,16 +1,18 @@
-<table border="1">
-  <caption>Lists</caption>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Description</th>
-    </tr>
-  </thead>
+<h1>My Lists</h1>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Description</th>
+      </tr>
+    </thead>
 
-  <tbody>
-    <tr *ngFor="let list of lists">
-      <td>{{list.id}}</td>
-      <td>{{list.description}}</td>
-    </tr>    
-  </tbody>
-</table>
+    <tbody>
+      <tr *ngFor="let list of lists">
+        <td>{{list.id}}</td>
+        <td>{{list.description}}</td>
+      </tr>    
+    </tbody>
+  </table>
+</div>
