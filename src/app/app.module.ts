@@ -10,11 +10,12 @@ import { ErrorComponent } from './error/error.component';
 import { ListsComponent } from './lists/lists.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { HardcodedAuthenticationService } from './service/hardcoded-authentication.service';
 
 @NgModule({
   imports:      [ BrowserModule, AppRoutingModule, FormsModule ],
   declarations: [ AppComponent, LoginComponent, WelcomeComponent, ErrorComponent, ListsComponent, MenuComponent, FooterComponent ],
-  providers: [],
+  providers: [HardcodedAuthenticationService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { 
