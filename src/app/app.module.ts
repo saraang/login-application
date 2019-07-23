@@ -11,10 +11,11 @@ import { ListsComponent } from './lists/lists.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HardcodedAuthenticationService } from './service/hardcoded-authentication.service';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   imports:      [ BrowserModule, AppRoutingModule, FormsModule ],
-  declarations: [ AppComponent, LoginComponent, WelcomeComponent, ErrorComponent, ListsComponent, MenuComponent, FooterComponent ],
+  declarations: [ AppComponent, LoginComponent, WelcomeComponent, ErrorComponent, ListsComponent, MenuComponent, FooterComponent, LogoutComponent ],
   providers: [HardcodedAuthenticationService],
   bootstrap:    [ AppComponent ]
 })

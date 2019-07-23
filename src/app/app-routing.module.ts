@@ -4,12 +4,15 @@ import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ErrorComponent } from './error/error.component';
 import { ListsComponent } from './lists/lists.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
   {path:'login', component:LoginComponent},
   {path:'welcome/:name', component:WelcomeComponent},
   {path:'lists', component:ListsComponent},
+  {path:'logout', component:LogoutComponent},
+
   {path:'**', component:ErrorComponent}
 ];
 
