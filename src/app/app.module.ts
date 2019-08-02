@@ -13,11 +13,12 @@ import { FooterComponent } from './footer/footer.component';
 import { HardcodedAuthenticationService } from './service/hardcoded-authentication.service';
 import { LogoutComponent } from './logout/logout.component';
 import { RouteGuardService } from './service/route-guard.service';
+import { WelcomeDataService } from './service/data/welcome-data.service';
 
 @NgModule({
   imports:      [ BrowserModule, AppRoutingModule, FormsModule ],
   declarations: [ AppComponent, LoginComponent, WelcomeComponent, ErrorComponent, ListsComponent, MenuComponent, FooterComponent, LogoutComponent ],
-  providers: [HardcodedAuthenticationService, RouteGuardService],
+  providers: [HardcodedAuthenticationService, RouteGuardService, WelcomeDataService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { 
