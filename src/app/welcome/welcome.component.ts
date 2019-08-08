@@ -21,7 +21,7 @@ export class WelcomeComponent implements OnInit {
   }
   
   getWelcomeMessage(){
-    this.service.executeHelloWorldBeanService()
+   // this.service.executeHelloWorldBeanService()
     console.log("getWelcomeMessage")
   }
 
